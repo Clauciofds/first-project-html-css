@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Cores */
+:root {
+  --default-h2-color: #5b067f;
+  --default-fonts-color: #ffffff;
+  --default-background-color: #8500ee;
+  --list-background-color: #f9f7f3;
+  --border-tables: 1px solid #ccd5ae;
+  --border-tables-radius: 8px;
+
+}
+
+/* Layout */
+.container,
+body {
+  width: 1280px;
+  margin: auto;
+  font-family: Inter, sans-serif;
+  height: calc(100vh - 84px - 84px);
+}
+
+header {
+  background-color: var(--default-background-color);
+  color: var(--default-fonts-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4.4%;
+  padding-right: 4.4%;
+  height: 84px;
+}
+
+.logo-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 80%;
+}
+
+.links {
+  width: 202px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Lista da loja */
+.storeList {
+  display: flex;
+  padding-left: 4.4%;
+  padding-right: 4.4%;
+  padding-top: 48px;
+  padding-bottom: 60px;
+  justify-content: space-between;
+}
+
+.product {
+  border: var(--border-tables);
+  border-radius: var(--border-tables-radius);
+  background-color: var(--list-background-color);
+  width: 360px;
+  height: 465px;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  width: 300;
+  height: 150;
+
+}
+
+h2 {
+  color: var(--default-h2-color);
+  padding-top: 15px;
+  padding-bottom: 9px;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--default-background-color);
+  color: var(--default-fonts-color);
+  font-size: 1.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 84px;
+}
